@@ -1,0 +1,14 @@
+{
+  "name": "lume",
+  "version": "1.0.0",
+  "description": "Lume - Premium Watch Insurance Platform",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:frontend": "pnpm --filter frontend run dev",
+    "build:frontend": "pnpm --filter frontend run build"
+  },
+  "author": "Lume Insurance",
+  "license": "ISC",
+  "packageManager": "pnpm@8.15.1"
+}
