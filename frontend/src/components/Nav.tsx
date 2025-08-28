@@ -1,20 +1,31 @@
 "use client";
 
 import Link from "next/link";
-import { Watch } from "lucide-react";
+import Image from "next/image";
 
 export default function Nav() {
   return (
-    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+    <nav className="w-full">
       <div className="container">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="p-2 bg-primary-600 rounded-lg group-hover:bg-primary-700 transition-colors">
-              <Watch className="h-6 w-6 text-white" />
-            </div>
-            <span className="text-xl font-bold text-gray-900">Lume</span>
+        <div className="flex justify-between items-center h-32">
+          <Link href="/">
+            <Image
+              src="/images/logo/wordmark.png"
+              alt="Lume Logo"
+              width={85}
+              height={30}
+            />
+            <span className="hidden">Lume</span>
           </Link>
+
+          <div className="flex gap-4">
+            <Link href="/">
+              <p className="text-base">About</p>
+            </Link>
+            <Link href="/">
+              <p className="text-base">Contact us</p>
+            </Link>
+          </div>
         </div>
       </div>
     </nav>

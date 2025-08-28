@@ -65,9 +65,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} font-sans antialiased`}>
         <Nav />
-        <main className="pt-16 min-h-screen">
-          {children}
-        </main>
+        <main>{children}</main>
         <Footer />
         <Seo />
         <Analytics />

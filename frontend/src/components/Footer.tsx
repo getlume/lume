@@ -1,44 +1,95 @@
+"use client";
+
 import Link from "next/link";
-import { Watch } from "lucide-react";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+
+const primaryFooterNavItems = [
+  { href: "/how-it-works", label: "How it works" },
+  {
+    href: "/guides",
+    label: "Guides",
+  },
+  { href: "/faq", label: "FAQs" },
+  { href: "/testimonials", label: "Testimonials" },
+  { href: "/about-us", label: "About us" },
+  { href: "mailto:alex@withfarra.com", label: "Contact us" },
+];
+
+const secondaryFooterNavItems = [
+  { href: "/terms", label: "Terms" },
+  { href: "/accessibility", label: "Accessibility" },
+  { href: "/cookie-policy", label: "Cookie policy" },
+  { href: "/privacy-policy", label: "Privacy policy" },
+];
 
 export default function Footer() {
+  const pathname = usePathname();
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
-      {/* Main Footer Content */}
-      <div className="container py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          {/* Brand Section */}
+    <footer className="bg-[#1E2A33] text-gray-300">
+      <div className="container pt-12 pb-20">
+        <div className="">
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="p-2 bg-primary-600 rounded-lg">
-                <Watch className="h-6 w-6 text-white" />
-              </div>
-              <span className="text-xl font-bold text-white">Lume</span>
+              <Image
+                src="/images/logo/long-url-logo.png"
+                alt="Lume Logo"
+                width={200}
+                height={30}
+                className="text-white"
+              />
+
+              <span className="hidden">Lume</span>
             </Link>
-            <p className="mb-4 text-sm">
-              Premium Watch Insurance Platform
+
+            <p className="mb-10 text-sm max-w-[600px]">
+              Lume is a modern insurance platform for watch lovers. Built for
+              simplicity, speed, and trust — we help you protect what matters
+              most.
             </p>
           </div>
 
-          {/* Contact Section */}
-          <div className="text-right">
-            <p className="text-sm text-gray-400">
-              hello@getlume.co.uk
-            </p>
-          </div>
-        </div>
-      </div>
+          <div className="flex gap-10 md:gap-20 mb-14">
+            <ul className="flex flex-col gap-3 text-xs">
+              {primaryFooterNavItems.map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className={`hover:text-[var(--foreground)] transition ${
+                      pathname === href
+                        ? "text-[var(--foreground)] font-semibold"
+                        : ""
+                    }`}
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-gray-800">
-        <div className="container py-6">
-          <div className="text-center">
-            <p className="text-sm">
-              © {currentYear} Lume Insurance. All rights reserved.
-            </p>
+            <ul className="flex flex-col gap-3 text-xs">
+              {secondaryFooterNavItems.map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className={`hover:text-[var(--foreground)] transition ${
+                      pathname === href
+                        ? "text-[var(--foreground)] font-semibold"
+                        : ""
+                    }`}
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
+
+          <p className="text-xs">
+            © {currentYear} Lume Insurance. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
