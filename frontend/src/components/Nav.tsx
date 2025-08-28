@@ -19,9 +19,10 @@ export default function Nav() {
           </Link>
 
           <div className="flex gap-4">
-            <Link href="/">
+            {/* <Link href="/">
               <p className="text-base">About</p>
-            </Link>
+            </Link> */}
+
             <Link href="/">
               <p className="text-base">Contact us</p>
             </Link>
