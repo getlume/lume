@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Home() {
   return (
@@ -6,7 +6,7 @@ export default function Home() {
       <section className="bg-white">
         <div className="container flex">
           <div>
-            <h1 className="heading-1 text-gray-900 max-w-[750px] mb-6">
+            <h1 className="heading-1 text-gray-900 max-w-[850px] mb-8">
               Watch insurance. <br />
               <span className="text-[#F4B942]">
                 Built for collectors, enthusiasts, and everyday wearers.
@@ -24,13 +24,13 @@ export default function Home() {
             </p>
           </div>
 
-          <Image
+          {/* <Image
             src="/images/hero/main-banner-image.png"
             alt="A Vacheron Constantin watch on a leather car seat"
             width={536}
             height={545}
             className=""
-          />
+          /> */}
         </div>
       </section>
     </div>
