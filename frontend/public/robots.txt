@@ -1,0 +1,16 @@
+# Robots.txt for Lume Insurance
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.getlume.co.uk/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin areas
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /private/
