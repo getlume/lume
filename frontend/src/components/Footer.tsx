@@ -6,6 +6,10 @@ import { usePathname } from "next/navigation";
 
 const primaryFooterNavItems = [
   { href: "/how-it-works", label: "How it works" },
+  {
+    href: "/guides",
+    label: "Guides",
+  },
   { href: "/faq", label: "FAQs" },
   { href: "/testimonials", label: "Testimonials" },
   { href: "/about-us", label: "About us" },
