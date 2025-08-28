@@ -171,7 +171,7 @@ export default function Home() {
                     </div>
                     <div className="bg-primary-50 rounded-lg p-3">
                       <p className="text-sm text-primary-700 font-medium">
-                        "Best watch insurance provider" - Forbes 2024
+                        &ldquo;Best watch insurance provider&rdquo; - Forbes 2024
                       </p>
                     </div>
                   </div>
@@ -190,7 +190,7 @@ export default function Home() {
               Why Choose Lume Insurance?
             </h2>
             <p className="text-lg text-gray-600">
-              We specialize in watch insurance, providing tailored coverage that traditional insurers can't match.
+              We specialize in watch insurance, providing tailored coverage that traditional insurers can&rsquo;t match.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -222,7 +222,7 @@ export default function Home() {
               Coverage for Every Collection
             </h2>
             <p className="text-lg text-gray-600">
-              From luxury Swiss watches to smart wearables, we've got you covered.
+              From luxury Swiss watches to smart wearables, we&rsquo;ve got you covered.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -266,7 +266,7 @@ export default function Home() {
             {/* Connection line for desktop */}
             <div className="hidden md:block absolute top-16 left-1/4 right-1/4 h-0.5 bg-gradient-to-r from-primary-200 via-primary-400 to-primary-200"></div>
             
-            {steps.map((step, index) => (
+            {steps.map((step) => (
               <div key={step.number} className="relative">
                 <div className="text-center">
                   <div className="relative inline-flex items-center justify-center w-16 h-16 mb-4">
@@ -315,7 +315,7 @@ export default function Home() {
                   ))}
                 </div>
                 <p className="text-gray-700 mb-4 italic">
-                  "{testimonial.content}"
+                  &ldquo;{testimonial.content}&rdquo;
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="h-10 w-10 bg-primary-100 rounded-full"></div>
