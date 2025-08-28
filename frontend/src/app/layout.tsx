@@ -1,5 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import type { Metadata } from "next";
 
 import Footer from "@/components/Footer";
@@ -11,6 +11,12 @@ import "./globals.css";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
   display: "swap",
 });
 
@@ -63,7 +69,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased`}>
         <Nav />
         <main>{children}</main>
         <Footer />
