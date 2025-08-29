@@ -53,8 +53,8 @@ export default function Footer() {
 
           <div className="flex gap-10 md:gap-20 mb-14">
             <ul className="flex flex-col gap-3 text-xs">
-              {primaryFooterNavItems.map(({ href, label }) => (
-                <li key={href}>
+              {primaryFooterNavItems.map(({ href, label }, index) => (
+                <li key={index}>
                   <Link
                     href={href}
                     className={`hover:text-[var(--foreground)] transition ${
@@ -70,8 +70,8 @@ export default function Footer() {
             </ul>
 
             <ul className="flex flex-col gap-3 text-xs">
-              {secondaryFooterNavItems.map(({ href, label }) => (
-                <li key={href}>
+              {secondaryFooterNavItems.map(({ href, label }, index) => (
+                <li key={index}>
                   <Link
                     href={href}
                     className={`hover:text-[var(--foreground)] transition ${

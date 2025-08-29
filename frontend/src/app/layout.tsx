@@ -73,7 +73,7 @@ export default function RootLayout({
         className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased`}
       >
         <Nav />
-        <main className="min-h-[1000px]">{children}</main>
+        <main className="md:min-h-[800px]">{children}</main>
         <Footer />
         <Seo />
         <Analytics />

@@ -2,30 +2,29 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center pt-12 md:pt-[150px] pb-[200px]">
-      <div className="container md:flex">
-        <div>
-          <h1 className="heading-1 text-gray-900 max-w-[850px] mb-8">
-            Watch insurance. <br />
-            <span className="text-primary">
-              Built for collectors, enthusiasts, and everyday wearers.
-            </span>
+    <div className="flex justify-center items-center pt-12">
+      <div className="container flex flex-col md:flex-row relative z-10">
+        <div className="flex flex-col justify-center">
+          <h1 className="heading-1 text-gray-900 mb-8">
+            We don&apos;t just help after your watch is{" "}
+            <span className="text-primary">stolen</span>
           </h1>
 
-          <p className="md:text-lg text-gray-600 max-w-[550px] mb-6">
-            Lume is watch insurance made simple. Get fast online quotes, instant
-            cover, and peace of mind — whether you’re insuring a single Rolex or
-            your entire collection.
+          <p className="md:text-lg text-gray-600 max-w-[550px] mb-8">
+            Lume uses AI and a live stolen-watch database to reduce theft risk,
+            flag fraud, and speed up recovery. Built by collectors in London,
+            Lume is designed so you can wear what you love — confidently, every
+            day.
           </p>
 
-          <p className="md:text-lg text-gray-600 max-w-[550px] mb-12">
-            Join our early access list and get 20% off when we launch.
+          <p className="md:text-lg text-gray-600 max-w-[550px] mb-4">
+            Join the early access list →
           </p>
 
           <form
             action="https://formspree.io/f/mpwjqary"
             method="POST"
-            className="flex flex-col sm:flex-row gap-4 max-w-[700px]"
+            className="flex flex-col sm:flex-row gap-4 max-w-[600px]"
           >
             <input
               type="email"
@@ -43,17 +42,16 @@ export default function Home() {
           </form>
 
           <p className="text-xs text-gray-600 mt-2">
-            Spaces on the waiting list are limited.
+            Sign-up for 20% off an annual plan when we launch.{" "}
           </p>
         </div>
 
-        <div className="hidden md:flex items-center">
+        <div className="flex items-center shrink-0 my-12">
           <Image
             src="/images/hero/main-banner-image.png"
             alt="A Vacheron Constantin watch on a leather car seat"
             width={500}
-            height={505}
-            className="ml-12"
+            height={510}
           />
         </div>
       </div>
