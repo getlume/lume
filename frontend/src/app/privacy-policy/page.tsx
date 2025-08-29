@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
         <section>
           <h2 className="text-2xl font-bold mb-4">1. Introduction</h2>
           <p className="mb-4">
-            Lume ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains 
+            Lume (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;) is committed to protecting your privacy. This Privacy Policy explains 
             how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
           </p>
           <p className="mb-4">
@@ -42,7 +42,7 @@ export default function PrivacyPolicy() {
           <h2 className="text-2xl font-bold mb-4">3. Legal Basis for Processing</h2>
           <p className="mb-4">We process your personal data based on:</p>
           <ul className="list-disc pl-6 mb-4">
-            <li><strong>Contract:</strong> To provide insurance services you've requested</li>
+            <li><strong>Contract:</strong> To provide insurance services you&rsquo;ve requested</li>
             <li><strong>Legal obligations:</strong> To comply with insurance regulations and anti-money laundering requirements</li>
             <li><strong>Legitimate interests:</strong> To improve our services and prevent fraud</li>
             <li><strong>Consent:</strong> For marketing communications (where applicable)</li>
@@ -142,7 +142,7 @@ export default function PrivacyPolicy() {
           <h2 className="text-2xl font-bold mb-4">12. Changes to This Policy</h2>
           <p className="mb-4">
             We may update this Privacy Policy from time to time. We will notify you of any material changes 
-            by posting the new policy on this page and updating the "Last updated" date.
+            by posting the new policy on this page and updating the &ldquo;Last updated&rdquo; date.
           </p>
         </section>
 
@@ -156,7 +156,7 @@ export default function PrivacyPolicy() {
             <p>Website: www.getlume.co.uk</p>
           </div>
           <p className="mt-4">
-            You also have the right to lodge a complaint with the Information Commissioner's Office (ICO) at 
+            You also have the right to lodge a complaint with the Information Commissioner&rsquo;s Office (ICO) at 
             <a href="https://ico.org.uk" className="text-primary-600 hover:underline"> ico.org.uk</a>
           </p>
         </section>

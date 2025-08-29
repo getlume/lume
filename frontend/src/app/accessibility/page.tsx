@@ -86,7 +86,7 @@ export default function Accessibility() {
           <ul className="list-disc pl-6 mb-4">
             <li>Increase text size in your browser settings</li>
             <li>Use high contrast mode in your operating system</li>
-            <li>Enable your browser's built-in accessibility features</li>
+            <li>Enable your browser&rsquo;s built-in accessibility features</li>
             <li>Use voice recognition software if available</li>
           </ul>
         </section>

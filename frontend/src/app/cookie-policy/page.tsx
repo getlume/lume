@@ -104,7 +104,7 @@ export default function CookiePolicy() {
         <section>
           <h2 className="text-2xl font-bold mb-4">7. Do Not Track</h2>
           <p className="mb-4">
-            Some browsers offer a "Do Not Track" setting, but there is no industry standard for 
+            Some browsers offer a &ldquo;Do Not Track&rdquo; setting, but there is no industry standard for 
             how websites should respond to these signals. Our website does not currently respond 
             to Do Not Track signals.
           </p>
@@ -115,7 +115,7 @@ export default function CookiePolicy() {
           <p className="mb-4">
             We may update this Cookie Policy from time to time to reflect changes in our practices 
             or for legal reasons. We will notify you of any material changes by updating the 
-            "Last updated" date at the top of this policy.
+            &ldquo;Last updated&rdquo; date at the top of this policy.
           </p>
         </section>
 
@@ -137,7 +137,7 @@ export default function CookiePolicy() {
           </p>
           <ul className="list-disc pl-6 mb-4">
             <li><a href="https://www.allaboutcookies.org" className="text-primary-600 hover:underline">www.allaboutcookies.org</a></li>
-            <li><a href="https://ico.org.uk/for-the-public/online/cookies/" className="text-primary-600 hover:underline">Information Commissioner's Office (ICO)</a></li>
+            <li><a href="https://ico.org.uk/for-the-public/online/cookies/" className="text-primary-600 hover:underline">Information Commissioner&rsquo;s Office (ICO)</a></li>
           </ul>
         </section>
       </div>

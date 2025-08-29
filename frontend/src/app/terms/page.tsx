@@ -9,7 +9,7 @@ export default function Terms() {
         <section>
           <h2 className="text-2xl font-bold mb-4">1. Agreement to Terms</h2>
           <p className="mb-4">
-            By accessing or using Lume's website and services, you agree to be bound by these Terms of Service. 
+            By accessing or using Lume&rsquo;s website and services, you agree to be bound by these Terms of Service. 
             If you disagree with any part of these terms, you do not have permission to access our services.
           </p>
         </section>
