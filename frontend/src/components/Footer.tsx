@@ -5,14 +5,14 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const primaryFooterNavItems = [
-  { href: "/how-it-works", label: "How it works" },
+  { href: "/coming-soon", label: "How it works" },
   {
-    href: "/guides",
+    href: "/coming-soon",
     label: "Guides",
   },
-  { href: "/faq", label: "FAQs" },
-  { href: "/testimonials", label: "Testimonials" },
-  { href: "/about-us", label: "About us" },
+  { href: "/coming-soon", label: "FAQs" },
+  { href: "/coming-soon", label: "Testimonials" },
+  { href: "/coming-soon", label: "About us" },
   { href: "mailto:hello@getlume.co.uk", label: "Contact us" },
 ];
 
@@ -28,7 +28,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#1E2A33] text-gray-300">
+    <footer className="bg-secondary text-gray-300">
       <div className="container pt-12 pb-20">
         <div className="">
           <div>

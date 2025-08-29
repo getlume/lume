@@ -2,23 +2,23 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center pt-[150px] pb-[200px]">
-      <div className="container flex">
+    <div className="flex flex-col justify-center pt-12 md:pt-[150px] pb-[200px]">
+      <div className="container md:flex">
         <div>
           <h1 className="heading-1 text-gray-900 max-w-[850px] mb-8">
             Watch insurance. <br />
-            <span className="text-[#F4B942]">
+            <span className="text-primary">
               Built for collectors, enthusiasts, and everyday wearers.
             </span>
           </h1>
 
-          <p className="text-lg text-gray-600 max-w-[550px] mb-6">
+          <p className="md:text-lg text-gray-600 max-w-[550px] mb-6">
             Lume is watch insurance made simple. Get fast online quotes, instant
             cover, and peace of mind — whether you’re insuring a single Rolex or
             your entire collection.
           </p>
 
-          <p className="text-lg text-gray-600 max-w-[550px] mb-12">
+          <p className="md:text-lg text-gray-600 max-w-[550px] mb-12">
             Join our early access list and get 20% off when we launch.
           </p>
 
@@ -32,11 +32,11 @@ export default function Home() {
               name="email"
               placeholder="Enter your email address"
               required
-              className="flex-1 px-4 py-3 border-[3px] border-gray-300 rounded-xl focus:ring-2 focus:ring-[#E2AB3A] focus:border-[#E2AB3A] outline-none transition-colors"
+              className="flex-1 px-4 py-3 border-[3px] border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-600 focus:border-primary-600 outline-none transition-colors"
             />
             <button
               type="submit"
-              className="px-6 py-3 bg-[#F4B942] border-[#E2AB3A] border-[3px] text-[#0A0E12] rounded-xl hover:bg-primary-700 transition-colors duration-200"
+              className="px-6 py-3 bg-primary border-primary-600 border-[3px] text-neutral-900 rounded-xl hover:bg-primary-700 transition-colors duration-200"
             >
               Join the waiting list
             </button>
@@ -47,7 +47,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex items-center">
+        <div className="hidden md:flex items-center">
           <Image
             src="/images/hero/main-banner-image.png"
             alt="A Vacheron Constantin watch on a leather car seat"
