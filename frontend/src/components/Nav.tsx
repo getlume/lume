@@ -5,8 +5,9 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const links = [
-  { href: "/coming-soon", label: "About" },
-  { href: "mailto:hello@getlume.co.uk", label: "Contact us" },
+  { href: "/coming-soon", label: "Stolen-Watch Database" },
+  { href: "/coming-soon", label: "About us" },
+  // { href: "mailto:hello@getlume.co.uk", label: "Contact us" },
 ];
 
 export default function Nav() {
@@ -27,8 +28,8 @@ export default function Nav() {
           </Link>
 
           <ul className="flex gap-5 text-sm">
-            {links.map(({ href, label }) => (
-              <li key={href}>
+            {links.map(({ href, label }, index) => (
+              <li className="hidden md:flex" key={index}>
                 <Link
                   href={href}
                   className={`hover:text-[var(--foreground)] transition ${
@@ -41,6 +42,15 @@ export default function Nav() {
                 </Link>
               </li>
             ))}
+
+            <li>
+              <Link
+                href="/coming-soon"
+                className="px-4 py-2 bg-primary border-primary-600 border-[3px] text-neutral-900 rounded-full hover:bg-primary-700 transition-colors duration-200"
+              >
+                Get a Quote
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
