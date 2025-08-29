@@ -13,7 +13,7 @@ const primaryFooterNavItems = [
   { href: "/faq", label: "FAQs" },
   { href: "/testimonials", label: "Testimonials" },
   { href: "/about-us", label: "About us" },
-  { href: "mailto:alex@withfarra.com", label: "Contact us" },
+  { href: "mailto:hello@getlume.co.uk", label: "Contact us" },
 ];
 
 const secondaryFooterNavItems = [

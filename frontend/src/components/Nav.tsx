@@ -2,8 +2,16 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+
+const links = [
+  { href: "/coming-soon", label: "About" },
+  { href: "mailto:hello@getlume.co.uk", label: "Contact us" },
+];
 
 export default function Nav() {
+  const pathname = usePathname();
+
   return (
     <nav className="w-full">
       <div className="container">
@@ -18,15 +26,22 @@ export default function Nav() {
             <span className="hidden">Lume</span>
           </Link>
 
-          <div className="flex gap-4">
-            {/* <Link href="/">
-              <p className="text-base">About</p>
-            </Link> */}
-
-            <Link href="/">
-              <p className="text-base">Contact us</p>
-            </Link>
-          </div>
+          <ul className="flex gap-5 text-sm">
+            {links.map(({ href, label }) => (
+              <li key={href}>
+                <Link
+                  href={href}
+                  className={`hover:text-[var(--foreground)] transition ${
+                    pathname === href
+                      ? "text-[var(--foreground)] font-semibold"
+                      : ""
+                  }`}
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </nav>
