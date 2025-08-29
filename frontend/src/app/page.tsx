@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-center pt-4 md:pt-12">
-      <div className="container flex flex-col md:flex-row relative z-10">
+    <div className="flex justify-center items-center pt-4 md:pt-12 md:pb-[200px]">
+      <div className="container flex flex-col md:flex-row-reverse relative z-10">
         <div className="flex flex-col justify-center">
-          <h1 className="heading-1 text-gray-900 mb-4 md:mb-8">
+          <h1 className="heading-1 text-gray-900 mb-4 md:mb-8 leading-display">
             We don&apos;t just help after your watch is{" "}
             <span className="text-primary">stolen</span>
           </h1>
@@ -18,7 +18,7 @@ export default function Home() {
           </p>
 
           <p className="md:text-lg text-gray-600 max-w-[550px] mb-4">
-            Join the early access list →
+            Get early access and 20% off →
           </p>
 
           <form
@@ -35,7 +35,7 @@ export default function Home() {
             />
             <button
               type="submit"
-              className="px-6 py-3 bg-primary border-primary-600 border-[3px] text-neutral-900 rounded-xl hover:bg-primary-700 transition-colors duration-200"
+              className="font-bold px-6 py-3 bg-primary border-primary-600 border-[3px] text-neutral-900 rounded-xl hover:bg-primary-700 transition-colors duration-200"
             >
               Join the waiting list
             </button>
@@ -46,11 +46,11 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex items-center shrink-0 my-12">
+        <div className="flex items-center shrink-0 my-12 md:pr-16">
           <Image
             src="/images/hero/main-banner-image.png"
             alt="A Vacheron Constantin watch on a leather car seat"
-            width={500}
+            width={450}
             height={510}
           />
         </div>

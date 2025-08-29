@@ -22,6 +22,6 @@
   }
 
   .heading-1 {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold font-display tracking-display leading-tight;
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold font-display tracking-display;
   }
 }

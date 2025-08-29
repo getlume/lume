@@ -28,11 +28,11 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-secondary text-gray-300">
-      <div className="container pt-12 pb-20">
-        <div className="">
+    <footer className="bg-[#EAE3DA]">
+      <div className="container pt-20 pb-20">
+        <div>
           <div>
-            <Link href="/" className="flex items-center gap-2 mb-4">
+            <Link href="/" className="flex items-center gap-2 mb-8">
               <Image
                 src="/images/logo/long-url-logo.png"
                 alt="Lume Logo"
@@ -44,7 +44,7 @@ export default function Footer() {
               <span className="hidden">Lume</span>
             </Link>
 
-            <p className="mb-10 text-sm max-w-[600px]">
+            <p className="mb-8 text-sm max-w-[600px]">
               Lume is a modern insurance platform for watch lovers. Built for
               simplicity, speed, and trust — we help you protect what matters
               most.

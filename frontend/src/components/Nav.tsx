@@ -46,7 +46,7 @@ export default function Nav() {
             <li>
               <Link
                 href="/coming-soon"
-                className="px-4 py-2 bg-primary border-primary-600 border-[3px] text-neutral-900 rounded-full hover:bg-primary-700 transition-colors duration-200"
+                className="font-bold px-4 py-2 bg-primary border-primary-600 border-[3px] text-neutral-900 rounded-full hover:bg-primary-700 transition-colors duration-200"
               >
                 Get a Quote
               </Link>
