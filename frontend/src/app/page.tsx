@@ -2,15 +2,15 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-center pt-12">
+    <div className="flex justify-center items-center pt-4 md:pt-12">
       <div className="container flex flex-col md:flex-row relative z-10">
         <div className="flex flex-col justify-center">
-          <h1 className="heading-1 text-gray-900 mb-8">
+          <h1 className="heading-1 text-gray-900 mb-4 md:mb-8">
             We don&apos;t just help after your watch is{" "}
             <span className="text-primary">stolen</span>
           </h1>
 
-          <p className="md:text-lg text-gray-600 max-w-[550px] mb-8">
+          <p className="md:text-lg text-gray-600 max-w-[550px] mb-4 md:mb-8">
             Lume uses AI and a live stolen-watch database to reduce theft risk,
             flag fraud, and speed up recovery. Built by collectors in London,
             Lume is designed so you can wear what you love — confidently, every

@@ -16,7 +16,7 @@ export default function Nav() {
   return (
     <nav className="w-full">
       <div className="container">
-        <div className="flex justify-between items-center h-32">
+        <div className="flex justify-between items-center h-24 md:h-32">
           <Link href="/">
             <Image
               src="/images/logo/wordmark.png"
