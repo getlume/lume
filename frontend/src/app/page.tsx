@@ -6,8 +6,8 @@ export default function Home() {
       <div className="container flex flex-col md:flex-row-reverse relative z-10">
         <div className="flex flex-col justify-center">
           <h1 className="heading-1 mb-8">
-            We don&apos;t just help after your watch is{" "}
-            <span className="text-primary">stolen</span>
+            <span className="text-primary">Lume insurance. </span> We don&apos;t
+            just help after your watch is stolen
           </h1>
 
           <p className="md:text-lg text-gray-600 max-w-[550px] mb-8">
